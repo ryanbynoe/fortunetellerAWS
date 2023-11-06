@@ -56,9 +56,9 @@ def lambda_handler(event, context):
 - Created Parameter mapping which modifies the incoming request by extracting specific values and appending it to the query string of the request:
 - ![alt text](images/parameter.png)
 
-- When entering the API URL I receive message not found error. This means we will have to specify in the URL the fortuneteller Here is an example I put "dev/fortuneTeller?question="Should I eat right now?":
+- When entering the API URL, I received message not found error. This means we will have to specify in the URL the fortuneteller Here is an example I put "dev/fortuneTeller?question="Should I eat right now?":
 
-- Came across an error after implementing the url. Ensure that the API route name is accurate iun the GET method. Instead of fortuneTeller I had entered fotuneTeller:
+- Came across an error after implementing the url. Ensure that the API route name is accurate in the GET method. Instead of fortuneTeller I had entered fotuneTeller:
 - ![alt text](images/uhoh.png)
 
 - Corrected the name for the Lambda Function and recreated new integration under new Lamdba Function. This led to the fortune teller application to work
